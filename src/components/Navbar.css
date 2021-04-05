@@ -5,7 +5,17 @@
     justify-content: start;
     align-items: center;
 }
-
+.contenedor{
+    margin-bottom: 15px;
+}
+.btn-right{
+    float: right;
+    margin-right: 15px;
+}
+.btn-left{
+    float: left;
+    margin-left: 15px;
+}
 .menu-bars {
     margin-left: 2rem;
     font-size: 2rem;
@@ -14,6 +24,7 @@
 }
 
 .nav-menu{
+    z-index: 10;
     background-color: #060b26 ;
     width: 250px;
     height: 100vh;

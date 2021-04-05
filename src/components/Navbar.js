@@ -139,7 +139,6 @@ const Navbar = () =>  {
         <button className="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" to="#">
           <i className="fas fa-bars"></i>
         </button>
-
         <form className="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
                 <div className="input-group">
                     <input className="form-control" type="text" placeholder="Search for..." aria-label="Search"
@@ -149,7 +148,6 @@ const Navbar = () =>  {
                     </div>
                 </div>
             </form>
-
        </div>
        <MDBContainer className="mt-5 text-center">
   <MDBRow>
