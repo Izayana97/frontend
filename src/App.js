@@ -32,6 +32,10 @@ import Admin from './components/administrador';
 //
 import { Dashboard } from './components/Dashboard';
 import { Login } from './components/Login';
+import MaestroCursos from './containers/maestros/MaestroCursos';
+import Maestrocursos from './components/MestroCursos';
+import Listados from './containers/maestros/listados';
+import PerfilMaestro from './containers/maestros/PerfilMaestro';
 
 function App() {
   return (<Router>
@@ -60,7 +64,9 @@ function App() {
             <Route path="/login" component = {LoginPrueba} />
             <Route path="/perfil-prueba" component = {PerfilPrueba} />
             <Route path="/admin" component = {Admin} />
-
+            <Route path="/MaestroCursos" exact component={MaestroCursos}/>
+            <Route path="/Listados" component={Listados}/>
+            <Route path="/Perfil-Maestro" component={PerfilMaestro}/>
             <Route exact path='/login1' component={Login} />
           <Route path='/dashboard' component={Dashboard} />
           </Switch>
