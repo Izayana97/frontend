@@ -20,7 +20,7 @@ import Contact from './components/contact';
 import Inicio from './components/inicio.component';
 import Registro from './components/pruebaRegistro';
 
-import Navbar from './components/Navbar';
+import Navbar from './containers/estudiantes/Navbar';
 import Navbar2 from './components/Navbar2';
 import Cursos from './components/cursos.component';
 import Maestro from './components/maestro';
@@ -33,11 +33,15 @@ import Admin from './components/administrador';
 import { Dashboard } from './components/Dashboard';
 import { Login } from './components/Login';
 import MaestroCursos from './containers/maestros/MaestroCursos';
-import Maestrocursos from './components/MestroCursos';
 import Listados from './containers/maestros/listados';
 import PerfilMaestro from './containers/maestros/PerfilMaestro';
 import Navbar1 from './containers/administrador/navbar1';
 import Navbar3 from './containers/administrador/Navbar3';
+import NavbarStudent from './containers/estudiantes/navbarStudent';
+import Historial from './containers/estudiantes/historial';
+import PerfilEstudiantes from './containers/estudiantes/perfilEstudiante';
+import EstudianteCursos from './containers/estudiantes/cursosEstudiante';
+import EstudianteMatricula from './containers/estudiantes/Matricula';
 
 function App() {
   return (<Router>
@@ -58,11 +62,16 @@ function App() {
             <Route path="/Inicio" component = {Inicio} />
             <Route path="/Registro" component = {Registro} />
 
-            <Route path="/Navbar" component = {Navbar} />
+            <Route path="/Inicio-estudiantes" component = {Navbar} />
             <Route path="/Navbar-administrador" component = {Navbar1} />
             <Route path="/Navbar" component = {Navbar3} />
+            <Route path="/NavbarStudent" component = {NavbarStudent} />
             <Route path="/Navbar2" component = {Navbar2} />
             <Route path="/Cursos" component = {Cursos} />
+            <Route path="/Estudiantes-historial" component = {Historial} />
+            <Route path="/Estudiantes-perfil" component = {PerfilEstudiantes} />
+            <Route path="/Estudiantes-cursos" component = {EstudianteCursos} />
+            <Route path="/Estudiantes-matricula" component = {EstudianteMatricula} />
             <Route path="/Maestro" component = {Maestro} />
             <Route path="/PerfilEstudiante" component= {PerfilEstudiante} />
             <Route path="/login" component = {LoginPrueba} />

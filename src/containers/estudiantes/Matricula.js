@@ -1,13 +1,11 @@
 import React, {useState} from 'react'
 import '../../components/Navbar.css'
-import { IconContext} from 'react-icons'
-import NavbarMaestro from './NavbarMaestro';
+import NavbarStudent from './navbarStudent';
 
-const MaestroCursos=()=>{
+const EstudianteMatricula=()=>{
   return(<>
-    <NavbarMaestro>
-    </NavbarMaestro>
-    <br></br>
+    <NavbarStudent>
+    </NavbarStudent><br></br>
     <div class="btn-group btn-left" role="group" aria-label="Basic outlined example">
         <button type="button" class="btn btn-outline-primary">Pagina Principal</button>
         </div>
@@ -19,7 +17,7 @@ const MaestroCursos=()=>{
   <section class="py-3 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Mis Cursos</h1>
+        <h1 class="fw-light">Matricula</h1>
       </div>
     </div>
   </section>
@@ -35,8 +33,7 @@ const MaestroCursos=()=>{
               <p class="card-text">Idioma Aleman</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Matricular</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -50,8 +47,7 @@ const MaestroCursos=()=>{
               <p class="card-text">Idioma Mandarin </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Matricular</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -65,8 +61,7 @@ const MaestroCursos=()=>{
               <p class="card-text">Idioma Frances</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Matricular</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -81,8 +76,7 @@ const MaestroCursos=()=>{
               <p class="card-text">Idioma Ingles</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Matricular</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -96,8 +90,7 @@ const MaestroCursos=()=>{
               <p class="card-text">Idioma Japones</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Matricular</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -111,8 +104,7 @@ const MaestroCursos=()=>{
               <p class="card-text">Idioma Italiano</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Matricular</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -128,4 +120,4 @@ const MaestroCursos=()=>{
 
   </>)
 }
-export default MaestroCursos;
+export default EstudianteMatricula;

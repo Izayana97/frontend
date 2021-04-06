@@ -1,13 +1,13 @@
 import React, {useState} from 'react'
 import '../../components/Navbar.css'
 //import PerfilEstudiante from '../../components/perfilEstudiante';
-import NavbarMaestro from './NavbarMaestro';
+import NavbarStudent from './navbarStudent';
 
-const PerfilMaestro=()=>{
+const PerfilEstudiantes=()=>{
   const sizeRule = {minHeight: '41rem'}
     return(<>
-        <NavbarMaestro>
-        </NavbarMaestro><br></br>
+        <NavbarStudent>
+        </NavbarStudent><br></br>
         <div class="btn-group btn-left" role="group" aria-label="Basic outlined example">
         <button type="button" class="btn btn-outline-primary">Pagina Principal</button>
         </div>
@@ -23,7 +23,7 @@ const PerfilMaestro=()=>{
                 <div className="col-lg-6">
                   <div className="card col-md-12 my-4" style={sizeRule}>
                     <div className="card-body">
-                      <h4 className="font-weight-extrabold my-4 card-title">Información del maestro</h4>
+                      <h4 className="font-weight-extrabold my-4 card-title">Información del Estudiante</h4>
                       <p>
                         <ul className="list-group list-group-flush">
                           <li className="list-group-item">Cinthia Sierra</li>
@@ -68,4 +68,4 @@ const PerfilMaestro=()=>{
             
 </>)}
 
-export default PerfilMaestro;
+export default PerfilEstudiantes;

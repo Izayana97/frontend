@@ -1,3 +1,6 @@
+*{
+    padding: 0;
+}
 .navbar {
     background-color: #060b26 ;
     height: 80px;
@@ -7,6 +10,28 @@
 }
 .contenedor{
     margin-bottom: 15px;
+}
+.informacion{
+    border: solid 4px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+    border-color: dodgerblue;
+}
+.tablahistorial{
+    border: solid;
+    border-radius: 1px;
+    border-color: dodgerblue;
+}
+.licentro{
+    padding-right: 20px;
+}
+.divtabla{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.ulhistorial{
+    display: inline-flex;
 }
 .btn-right{
     float: right;

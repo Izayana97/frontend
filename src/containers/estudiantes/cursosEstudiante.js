@@ -1,13 +1,11 @@
 import React, {useState} from 'react'
 import '../../components/Navbar.css'
-import { IconContext} from 'react-icons'
-import NavbarMaestro from './NavbarMaestro';
+import NavbarStudent from './navbarStudent';
 
-const MaestroCursos=()=>{
+const EstudianteCursos=()=>{
   return(<>
-    <NavbarMaestro>
-    </NavbarMaestro>
-    <br></br>
+    <NavbarStudent>
+    </NavbarStudent><br></br>
     <div class="btn-group btn-left" role="group" aria-label="Basic outlined example">
         <button type="button" class="btn btn-outline-primary">Pagina Principal</button>
         </div>
@@ -17,9 +15,9 @@ const MaestroCursos=()=>{
         </div><br></br><br></br>
     <main>
   <section class="py-3 text-center container">
-    <div class="row py-lg-5">
+    <div class="row py-lg-3">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Mis Cursos</h1>
+        <h1 class="fw-light">Cursos</h1>
       </div>
     </div>
   </section>
@@ -36,7 +34,6 @@ const MaestroCursos=()=>{
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -51,7 +48,6 @@ const MaestroCursos=()=>{
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -66,7 +62,6 @@ const MaestroCursos=()=>{
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -82,7 +77,6 @@ const MaestroCursos=()=>{
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -97,7 +91,6 @@ const MaestroCursos=()=>{
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -112,7 +105,6 @@ const MaestroCursos=()=>{
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -128,4 +120,4 @@ const MaestroCursos=()=>{
 
   </>)
 }
-export default MaestroCursos;
+export default EstudianteCursos;

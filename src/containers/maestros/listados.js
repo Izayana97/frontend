@@ -17,8 +17,8 @@ const Listados=()=>{
         <div>
             <h4>Listado</h4>
         </div><br></br>
-        <div>
-        <table class="table .table-bordered">
+        <div class="divtabla">
+        <table class="table .table-bordered tablahistorial">
         <thead>
         <tr>
       <th scope="col">#</th>

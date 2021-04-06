@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react'
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from 'react-router-dom'
-import { SidebarData } from './SidebarData'
-import './Navbar.css'
+import { SidebarData } from '../../components/SidebarData'
+import '../../components/Navbar.css';
 import { IconContext} from 'react-icons'
 import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol,  MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, 
 MDBDropdown, MDBDropdownItem, MDBDropdownToggle, MDBDropdownMenu } from "mdbreact";
