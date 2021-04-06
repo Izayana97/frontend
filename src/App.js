@@ -36,6 +36,8 @@ import MaestroCursos from './containers/maestros/MaestroCursos';
 import Maestrocursos from './components/MestroCursos';
 import Listados from './containers/maestros/listados';
 import PerfilMaestro from './containers/maestros/PerfilMaestro';
+import Navbar1 from './containers/administrador/navbar1';
+import Navbar3 from './containers/administrador/Navbar3';
 
 function App() {
   return (<Router>
@@ -57,6 +59,8 @@ function App() {
             <Route path="/Registro" component = {Registro} />
 
             <Route path="/Navbar" component = {Navbar} />
+            <Route path="/Navbar-administrador" component = {Navbar1} />
+            <Route path="/Navbar" component = {Navbar3} />
             <Route path="/Navbar2" component = {Navbar2} />
             <Route path="/Cursos" component = {Cursos} />
             <Route path="/Maestro" component = {Maestro} />
