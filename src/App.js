@@ -46,6 +46,7 @@ import NavbarAdmin from './containers/administrador/navbarAdmin';
 import ListaEstudiantes from './containers/administrador/listaEstudiantes';
 import ListaMaestros from './containers/administrador/listaMaestros';
 import AdminCursos from './containers/administrador/cursosAdmin';
+import PerfilAdmin from './containers/administrador/perfilAdmin';
 
 function App() {
   return (<Router>
@@ -82,6 +83,7 @@ function App() {
             <Route path="/lista-maestros" component = {ListaMaestros} />
             <Route path="/PerfilEstudiante" component= {PerfilEstudiante} />
             <Route path="/Admin-Cursos" component = {AdminCursos} />
+            <Route path="/Admin-Perfil" component = {PerfilAdmin} />
             <Route path="/login" component = {LoginPrueba} />
             <Route path="/perfil-prueba" component = {PerfilPrueba} />
             <Route path="/admin" component = {Admin} />

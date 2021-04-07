@@ -7,7 +7,7 @@ import * as IoIcons from "react-icons/io";
 export const SidebarAdmin = [
     {
         title: 'Perfil',
-        path: '/Perfil-admin',
+        path: '/Admin-Perfil',
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },
