@@ -42,6 +42,10 @@ import Historial from './containers/estudiantes/historial';
 import PerfilEstudiantes from './containers/estudiantes/perfilEstudiante';
 import EstudianteCursos from './containers/estudiantes/cursosEstudiante';
 import EstudianteMatricula from './containers/estudiantes/Matricula';
+import NavbarAdmin from './containers/administrador/navbarAdmin';
+import ListaEstudiantes from './containers/administrador/listaEstudiantes';
+import ListaMaestros from './containers/administrador/listaMaestros';
+import AdminCursos from './containers/administrador/cursosAdmin';
 
 function App() {
   return (<Router>
@@ -73,13 +77,17 @@ function App() {
             <Route path="/Estudiantes-cursos" component = {EstudianteCursos} />
             <Route path="/Estudiantes-matricula" component = {EstudianteMatricula} />
             <Route path="/Maestro" component = {Maestro} />
+            <Route path="/navbar-admin" component = {NavbarAdmin} />
+            <Route path="/lista-estudiantes" component = {ListaEstudiantes} />
+            <Route path="/lista-maestros" component = {ListaMaestros} />
             <Route path="/PerfilEstudiante" component= {PerfilEstudiante} />
+            <Route path="/Admin-Cursos" component = {AdminCursos} />
             <Route path="/login" component = {LoginPrueba} />
             <Route path="/perfil-prueba" component = {PerfilPrueba} />
             <Route path="/admin" component = {Admin} />
             <Route path="/MaestroCursos" exact component={MaestroCursos}/>
             <Route path="/Listados" component={Listados}/>
-            <Route path="/Perfil-Maestro" component={PerfilMaestro}/>
+            <Route path="/Perfil" component={PerfilMaestro}/>
             <Route exact path='/login1' component={Login} />
           <Route path='/dashboard' component={Dashboard} />
           </Switch>

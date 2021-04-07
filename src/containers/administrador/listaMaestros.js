@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 import '../../components/Navbar.css'
-import NavbarMaestro from './NavbarMaestro';
+import NavbarAdmin from './navbarAdmin';
 
-const Listados=()=>{
+const ListaMaestros=()=>{
     return(<>
-        <NavbarMaestro>
-        </NavbarMaestro><br></br>
+        <NavbarAdmin>
+        </NavbarAdmin><br></br>
         <div class="btn-group btn-left" role="group" aria-label="Basic outlined example">
         <button type="button" class="btn btn-outline-primary">Pagina Principal</button>
         </div>
@@ -15,7 +15,7 @@ const Listados=()=>{
             <button type="button" class="btn btn-outline-primary">Cerrar Sesión</button>
             </div><br></br><br></br>
         <div>
-            <h4>Listado Estudiantes</h4>
+            <h4>Listado Maestros</h4>
         </div><br></br>
         <div class="divtabla">
         <table class="table .table-bordered tablahistorial">
@@ -25,6 +25,7 @@ const Listados=()=>{
       <th scope="col">Nombre Alumno</th>
       <th scope="col">Telefono</th>
       <th scope="col">Correo</th>
+      <th scope="col">Dirección</th>
       <th scope="col"></th>
     </tr>
   </thead>
@@ -34,6 +35,7 @@ const Listados=()=>{
       <td>Mark Otto</td>
       <td>99882256</td>
       <td>mark@gmail.com</td>
+      <td>colonia el carrizal</td>
       <td><button type="button" class="btn btn-link">Editar</button><button type="button" class="btn btn-link">Eliminar</button></td>
     </tr>
     <tr>
@@ -41,6 +43,7 @@ const Listados=()=>{
       <td>Jacob Thornton</td>
       <td>98564323</td>
       <td>jacob@gmail.com</td>
+      <td>colonia el carrizal</td>
       <td><button type="button" class="btn btn-link">Editar</button><button type="button" class="btn btn-link">Eliminar</button></td>
     </tr>
     <tr>
@@ -48,6 +51,7 @@ const Listados=()=>{
       <td>Carlos Reyes</td>
       <td>95679342</td>
       <td>carlos@gmail.com</td>
+      <td>colonia el carrizal</td>
       <td><button type="button" class="btn btn-link">Editar</button><button type="button" class="btn btn-link">Eliminar</button></td>
     </tr>
     <tr>
@@ -55,6 +59,7 @@ const Listados=()=>{
       <td>Maria Thornton</td>
       <td>87956342</td>
       <td>Maria@gmail.com</td>
+      <td>colonia el carrizal</td>
       <td><button type="button" class="btn btn-link">Editar</button><button type="button" class="btn btn-link">Eliminar</button></td>
             </tr>
             </tbody>
@@ -66,4 +71,4 @@ const Listados=()=>{
 </>)    
 }
 
-export default Listados;
+export default ListaMaestros;
