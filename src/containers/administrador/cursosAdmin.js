@@ -2,8 +2,67 @@ import React, {useState} from 'react'
 import '../../components/Navbar.css'
 import { IconContext} from 'react-icons'
 import NavbarAdmin from './navbarAdmin';
-
+import {Modal} from '@material-ui/core';
+import {ModalBody, ModalHeader } from 'reactstrap';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { faPencilAlt, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 const AdminCursos=()=>{
+  const [enable, setEnable] = useState(false);
+  const [modalInsertar, setModalInsertar]=useState(false);
+  const fincaInit ={
+    id:'',
+  }
+  const [fincaSeleccionada, setFincaSeleccionada]=useState(fincaInit);
+  const handleChange=(e)=>{
+    let {name, value}=e.target;
+      setFincaSeleccionada((prevState)=>{
+        if(prevState[name]!==value){
+          setEnable(true);
+        }
+      return{...prevState,
+      [name]: value
+      }
+    })
+  }
+
+  const abrirCerrarModalInsertar=()=>{
+    setEnable(false)
+    
+    setModalInsertar(!modalInsertar);
+  }
+
+  const bodyInsertar=(
+    <div style={{ overflowY:'auto',overflowX:'hidden',position:'absolute', width:'470px', height:'600px', backgroundColor:'white', top:'50%',  left:'50%', transform: 'translate(-50%, -50%)', borderRadius:10}}>
+      <ModalBody className="ml-3" style={{ overflowY:'auto',position:'absolute', backgroundColor:'white', width:'430px'}}>
+      
+    <div className="form-group mt-4">
+      <label  htmlFor="tipo_finca">Tipo Finca</label>
+      <select className="form-control"  name="tipo_finca" id="tipo_finca" onChange={handleChange} >
+        <option  value='' >--seleccione--</option>
+      </select>
+    </div>
+    <div className="form-group">
+      <label htmlFor="tecnico">Técnico</label>
+      <select className="form-control "  name="tecnico" id="tecnico" onChange={handleChange} >
+        <option  value='' >--seleccione--</option>
+      
+      </select>
+    </div>
+    <div className="form-group">
+      <label htmlFor="nombre">Nombre Finca</label>
+      <input className="form-control" type="text" name="nombre" id="nombre" onChange={handleChange} />
+    </div>
+    <div className="form-group">
+      <label className="small mb-1"  htmlFor="inputCountry">Latitud</label>
+      <input className="form-control " type="number" name="latitud" id="latitud" onChange={handleChange} />          
+    </div>
+    <footer style={{paddingTop:'10px', marginLeft:'auto'}}>
+      <button onChange={handleChange} disabled={!enable} className="btn btn-outline-primary btn-aceptar btn-block btn-sm" >Agregar</button>
+      <button className="btn btn-outline-primary btn-cancelar btn-block btn-sm" onClick={()=>abrirCerrarModalInsertar()}>Cancelar</button>
+    </footer> 
+    </ModalBody>
+  </div>
+      )
   return(<>
     <NavbarAdmin>
     </NavbarAdmin>
@@ -12,7 +71,7 @@ const AdminCursos=()=>{
         <button type="button" class="btn btn-outline-primary">Pagina Principal</button>
         </div>
         <div class="btn-group btn-right" role="group" aria-label="Basic outlined example">
-            <button type="button" class="btn btn-outline-primary">Agregar Curso</button>
+            <button type="button" class="btn btn-outline-primary" onClick={()=>abrirCerrarModalInsertar()}>Agregar Curso</button>
             <button type="button" class="btn btn-outline-primary">Cerrar Sesión</button>
         </div><br></br><br></br>
     <main>
@@ -124,7 +183,7 @@ const AdminCursos=()=>{
   </div>
 
 </main>
-
+<Modal open={modalInsertar} onClose={abrirCerrarModalInsertar}>{bodyInsertar}</Modal>
   </>)
 }
 export default AdminCursos;
